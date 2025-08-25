@@ -1,2 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss" source(none);
 @source "./";
+
+/* 
+@layer base {
+    body {
+        font-family: 'Quicksand', serif;
+    }
+} 
+
+The commented code above would do exactly the same as the next
+two directives. But with this @theme definition we can use 
+.font-quicksand class whenever we want.
+*/
+@theme {
+    --font-quicksand: "Quicksand", serif;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-quicksand);
+    }
+}
