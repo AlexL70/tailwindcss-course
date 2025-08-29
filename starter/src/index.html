@@ -13,6 +13,10 @@
             mobileMenuIcon.addEventListener("click", () => {
                 mobileMenuIcon.classList.toggle("open");
             });
+            const ticketMenuItem = document.getElementById("ticket-menu-item");
+            ticketMenuItem.addEventListener("click", () => {
+                ticketMenuItem.classList.toggle("open");
+            });
         };
     </script>
 </head>
@@ -41,7 +45,33 @@
                     </button>
                     <div
                         class="hidden peer-open:block absolute top-15.5 bg-gradient-to-r from-rose-500 to-pink-500 w-full left-0">
-                        mobile menu
+                        <div
+                            class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/15">
+                            <span>Home</span>
+                        </div>
+                        <div
+                            class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/15">
+                            <span>Lineup</span>
+                        </div>
+                        <div id="ticket-menu-item"
+                            class="group relative h-full cursor-pointer items-center text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/15">
+                            <div class="p-4 text-center font-bold">Tickets</div>
+                            <div class="hidden group-open:block">
+                                <div
+                                    class="text-center p-4 relative text-pink-200 hover:text-zinc-200 hover:bg-white/8 transition-colors">
+                                    <span>Single day ticket</span>
+                                </div>
+                                <div
+                                    class="text-center p-4 relative text-pink-200 hover:text-zinc-200 hover:bg-white/8 transition-colors">
+                                    <span>7 days ticket</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/15">
+                            <span>Support</span>
+                        </div>
+
                     </div>
                 </div>
                 <div class="md:flex hidden flex-1 items-center justify-end">
