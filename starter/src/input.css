@@ -15,6 +15,17 @@ two directives. But with this @theme definition we can use
 */
 @theme {
   --font-quicksand: "Quicksand", serif;
+  --animate-wavey: wavey 1s linear infinite;
+
+  @keyframes wavey {
+    0%,
+    100% {
+      transform: scaleY(0.5);
+    }
+    50% {
+      transform: scaleY(1.5);
+    }
+  }
 }
 
 @layer base {
