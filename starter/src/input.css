@@ -65,7 +65,7 @@ two directives. But with this @theme definition we can use
   h4 {
     @apply text-3xl font-bold;
   }
-  h4 {
+  h5 {
     @apply text-2xl font-bold;
   }
   h6 {
